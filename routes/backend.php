@@ -25,4 +25,8 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-// Route::get('/test/{name}',[MOlaracon::class, 'index']);
+Route::get('/backend',[MOlaracon::class, 'backend']);
+Route::get('/mo',[MOlaracon::class, 'mo']);
+
+
+

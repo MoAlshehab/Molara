@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\backend\MOlaracon;
+use App\Http\Controllers\frontend1\MOlaracon;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
-
+Route::get('/frontend1',[MOlaracon::class, 'frontend']);
 
 // Route::get('/test/{name}',[MOlaracon::class, 'index']);
